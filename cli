@@ -1,0 +1,6 @@
+#!/bin/sh
+# This script is used to start the CLI for the application.
+
+ # The  console.php  file is the entry point for the CLI application. It is responsible for parsing the command line arguments and executing the appropriate command. 
+ # Path: console.php
+php console.php $@
