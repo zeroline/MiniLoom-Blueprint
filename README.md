@@ -1,2 +1,2 @@
 # MiniLoom-Blueprint
-An example blueprint for using the MiniLook library
+An example blueprint application for using the MiniLoom library
