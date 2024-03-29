@@ -16,7 +16,7 @@ class HelloWorldCommandController extends Controller
 {
     public function hello(?string $name = null): void
     {
-        if($name === null) {
+        if ($name === null) {
             echo 'Hello World!'.PHP_EOL;
         } else {
             echo 'Hello '.$name.'!'.PHP_EOL;
@@ -25,7 +25,7 @@ class HelloWorldCommandController extends Controller
 
     public function echo(string $name, ?int $age = null): void
     {
-        if($age === null) {
+        if ($age === null) {
             echo $name.PHP_EOL;
         } else {
             echo $name.' is '.$age.' years old.'.PHP_EOL;
