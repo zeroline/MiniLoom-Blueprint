@@ -19,16 +19,26 @@ use zeroline\MiniLoom\Modules\GlobalConfiguration\Module as GlobalConfigurationM
 use zeroline\MiniLoom\Modules\JobManagement\Module as JobManagementModule;
 
 /**
+ * Include the custom modules
+ */
+use zeroline\MiniLoomBlueprint\Modules\HelloWorld\Module as HelloWorldModule;
+
+/**
  * Instantiate the console router
  */
 $router = new ConsoleRouter();
 
 /**
- * Register the modules
+ * Register the core modules
  */
 ModuleManager::registerModule(new MigrationModule());
 ModuleManager::registerModule(new GlobalConfigurationModule());
 ModuleManager::registerModule(new JobManagementModule());
+
+/**
+ * Register the custom modules
+ */
+ModuleManager::registerModule(new HelloWorldModule());
 
 /**
  * Register the commands from within the modules
